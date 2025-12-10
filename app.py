@@ -1,35 +1,6 @@
 from logic import load_movies, add_movie, save_movies, mark_watched, find_by_year
 
-# def main():
-#     def display_info():
-#         print("""
-# 1. Показать все фильмы
-# 2. Добавить фильм
-# 3. Отметить фильм как просмотренный
-# 4. Найти фильмы по году
-# 0. Выход
-#         """)
-#     display_info()
-#
-#     user_input = int(input("Выберите действие: "))
-#     if user_input == 1:
-#         movies = load_movies()
-#     elif user_input == 2:
-#         movies = add_movie()
-#         save_movies(movies)
-#     elif user_input == 3:
-#         movies = mark_watched()
-#         save_movies(movies)
-#     elif user_input == 4:
-#         movies = find_by_year()
-#     elif user_input == 0:
-#         print("До свидания!")
-#     else:
-#         print("Неизвестный пункт меню.")
-#
-# if __name__ == '__main__':
 DATA_FILE = "movies.json"
-
 
 def main():
     movies = load_movies(DATA_FILE)

@@ -46,7 +46,4 @@ def mark_watched(movies: list[dict], movie_id: int) -> list[dict]:
     return movies
 
 def find_by_year(movies: list[dict], year: int) -> list[dict]:
-    # for movie in movies:
-    #     if movie.get('year') == year:
-    #         return movies
     return [movie for movie in movies if movie.get("year") == year]
